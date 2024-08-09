@@ -5,7 +5,12 @@ module.exports = [
   {
     name: 'strapi::cors',
     config: {
-      origin: ['http://localhost:3000', 'http://192.168.7.98:1337'], // Add your IP address and other allowed origins
+      origin: [
+        'http://localhost:3000',
+        'http://192.168.7.97',
+        'https://grocery-strore-backend.onrender.com',
+        'https://grocery-store-tan.vercel.app'  // Add your Vercel frontend domain here
+      ],
       methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'OPTIONS'],
     },
   },
